@@ -18,15 +18,58 @@
             <lable style="margin-left: 10px;">Advanced Search</lable>
         </div>
 
+        <div id="hr"></div>
+
         <!-- Form Search -->
-        <form action="https://www.google.com/search">
-            <div id="inputWrapper">
-                <input id="input" type="text" name="q">
+        <div class="form-div">
+            <div class="div-span">
+                <span>Find pages with...</span>
             </div>
-            <div class="submit-div">
-                <input class="submit" type="submit" value="Advanced Search">
-            </div>
-        </form>
+            <form action="https://www.google.com/search">                
+                    <div class="div-T-I">
+                        <div class="div-advanced-text">
+                            <label class="advanced-text" for="all-words">all these words:</label>
+                        </div>
+                        <div class="div-advanced-input">                
+                            <input class="advanced-input" type="text" id="all-words" autofocus="autofocus" name="as_q">
+                        </div>
+                    </div>
+
+                    <div class="div-T-I" >
+                        <div class="div-advanced-text">
+                            <label class="advanced-text" for="exact-words">this exact word or phrase:</label>
+                        </div>
+                        <div class="div-advanced-input">
+                            <input class="advanced-input" type="text" id="exact-words" name="as_epq">
+                        </div>
+                    </div>
+
+                    <div class="div-T-I" >
+                        <div class="div-advanced-text">
+                            <label class="advanced-text" for="any-words">any of these words:</label>
+                        </div>
+                        <div class="div-advanced-input">
+                            <input class="advanced-input" type="text" id="any-words" name="as_oq">
+                        </div>
+                    </div>
+
+                    <div class="div-T-I" >
+                        <div class="div-advanced-text">
+                            <label class="advanced-text" for="none-words">none of these words:</label>
+                        </div>
+                        <div class="div-advanced-input">
+                            <input class="advanced-input" type="text" id="none-words" name="as_eq">
+                        </div>
+                    </div>
+
+                    <div class="div-T-I" >
+                        <div class="div-advanced-submit">
+                            <input type="hidden" name="tbs">
+                            <input class="advanced-submit" type="submit" value="Advance Search">
+                        </div>
+                    </div>
+            </form>
+        </div>
         <!-- Form Search End -->
     </body>
 </html>

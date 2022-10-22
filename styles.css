@@ -23,6 +23,65 @@ header {
     margin: 25px 35px;
 }
 
+#hr {
+    border-bottom: 1px solid #ebebeb;
+    border-color: #3c4043
+}
+
+.form-div {
+    height: 800px;
+    width: 800px;
+    margin: 40px 2% 0 45px;
+}
+.div-span {
+    font-size: 19px;
+    color: #e8eaed;
+}
+.div-T-I > div {
+    display: inline-block;
+}
+.div-advanced-text {
+    width: 21%;
+}
+.div-advanced-input {
+    width: 60%;
+}
+.advanced-input {
+    width: 75%;
+    height: 25px;
+    background: #202124;
+    border: 1px solid #5f6368;
+    color: #bdc1c6;
+    font-size: 13px;
+    padding: 1px 8px;
+    border-radius: 1px;
+    margin: 5px;
+}
+.advanced-text {
+    text-align: left;
+    color: #bdc1c6;
+    font-size: 16px;
+}
+.div-advanced-submit {
+    width: 68%;
+    margin: 9px;
+}
+.advanced-submit {
+    background: #8ab4f8;
+    border: none;
+    border-radius: 2px;
+    color: #202124;
+    float: right;
+    height: 30px;
+    padding: 0 12px;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+}
+.advanced-submit:hover {
+    background-color: #AECBFA;
+}
+
 /* Google and Images Page */
 /* Div Links */
 .links {
@@ -53,22 +112,47 @@ li:nth-child(2){
 }
 
 /*  Search input */
+#inputWrapper > span {
+    align-self: center;
+    margin: 0 auto;
+    padding-left: 5px;
+    color: rgb(118, 118, 118);
+}
+#camera {
+    height: 24px;
+    width: 24px;
+    align-self: center;
+    margin: 0 auto;
+    padding-right: 5px;
+}
+#mic {
+    height: 24px;
+    width: 24px;
+    align-self: center;
+    margin: 0 auto 0 auto;
+}
 #inputWrapper {
     display: flex;
     height: 44px;
     z-index: 3;
-    border: 1px solid #dfe1e5;
+    border: 1px solid rgb(118, 118, 118);
     box-shadow: none;
     border-radius: 24px;
     margin: 0 auto;
     width: 584px;
     margin-top: 30px;
 }
+#inputWrapper:hover {
+    background-color: #303134;
+    border: none;
+}
+#input:hover {
+    background-color: #303134;
+}
 #input {
     color: white;
     background-color: #202124;
-    margin: 0 auto;
-    width: 500px;
+    width: 460px;
     border: none;
     outline: none;
     font-family: inherit;
@@ -80,7 +164,6 @@ li:nth-child(2){
 }
 #input:focus {
     color: white;
-    background-color: #202124;
 }
 
 /* Submit div and button */
@@ -102,4 +185,7 @@ li:nth-child(2){
     min-width: 54px;
     text-align: center;
     cursor: pointer;
+}
+.submit:hover {
+    border: .2px solid rgb(118, 118, 118);
 }
